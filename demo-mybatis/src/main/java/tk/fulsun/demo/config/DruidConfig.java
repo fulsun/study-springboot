@@ -1,4 +1,4 @@
-package demo.config;
+package tk.fulsun.demo.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;

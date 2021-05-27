@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import tk.fulsun.demo.mapper.UserMapper;
 import tk.fulsun.demo.model.User;
 import tk.fulsun.demo.model.UserExample;
 import tk.fulsun.demo.model.UserExample.Criteria;
-
 
 /**
  * @author fsun7
@@ -24,8 +24,7 @@ import tk.fulsun.demo.model.UserExample.Criteria;
 @RestController
 public class UserController {
 
-  @Autowired
-  private UserMapper userMapper;
+  @Autowired private UserMapper userMapper;
 
   @GetMapping("/user/all")
   public List<User> getAllUser() {
@@ -42,14 +41,14 @@ public class UserController {
   }
 
   @PostMapping("/user/add")
-  public String addUser(User user) {
-    int status = userMapper.insert(user);
+  public String addUser(@RequestBody User user) {
+    int status = userMapper.insertSelective(user);
     return status > 0 ? "成功" : "失败";
   }
 
   @PutMapping("/user/update")
-  public String updateUser(User user) {
-    int status = userMapper.updateByExampleSelective(user, null);
+  public String updateUser(@RequestBody User user) {
+    int status = userMapper.updateByPrimaryKeySelective(user);
     return status > 0 ? "成功" : "失败";
   }
 
@@ -58,5 +57,4 @@ public class UserController {
     int status = userMapper.deleteByPrimaryKey(id);
     return status > 0 ? "成功" : "失败";
   }
-
 }
