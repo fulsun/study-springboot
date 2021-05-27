@@ -1,6 +1,7 @@
 #!/bin/bash
-exec redis-server ./redis-master-6379.conf
-exec redis-server ./redis-slave-6380.conf
-exec redis-server ./redis-slave-6381.conf
-exec redis-server ./sentinel-26379.conf
-exec redis-server ./sentinel-26380.conf
+cd /home/zy/redis-config/redis-sentinel
+redis-server ./redis-6379.conf &
+redis-server ./redis-6380.conf &
+redis-server ./redis-6381.conf &
+redis-sentinel ./sentinel-26379.conf &
+redis-sentinel ./sentinel-26380.conf &
