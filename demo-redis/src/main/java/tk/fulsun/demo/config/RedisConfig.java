@@ -46,23 +46,21 @@ public class RedisConfig {
     // jdk1.8出的（并且这个类是不可变的和线程安全的，可以研究一下它的API），当然还需要对这个对象进行json格式的转换，如下图：
     om.disable(SerializationFeature.WRITE_DATE_KEYS_AS_TIMESTAMPS);
     om.registerModule(new JavaTimeModule());
-
     jackson2JsonRedisSerializer.setObjectMapper(om);
     // String 的序列化
     StringRedisSerializer stringRedisSerializer = new StringRedisSerializer();
-
     // key采用String的序列化方式
     template.setKeySerializer(stringRedisSerializer);
     // value序列化方式采用jackson
-    template.setValueSerializer(stringRedisSerializer);
-
+    template.setValueSerializer(jackson2JsonRedisSerializer);
     // hash的key也采用String的序列化方式
     template.setHashKeySerializer(stringRedisSerializer);
     // hash的value序列化方式采用jackson
     template.setHashValueSerializer(jackson2JsonRedisSerializer);
     // 非spring容器必须执行
     template.afterPropertiesSet();
-
+    // 设置其他默认的序列化方式为fastjson
+    template.setDefaultSerializer(jackson2JsonRedisSerializer);
     return template;
   }
 }
