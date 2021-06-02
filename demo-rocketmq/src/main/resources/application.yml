@@ -1,0 +1,5 @@
+service:
+  port: 8890
+
+rocketmq:
+  name-server: 192.168.56.101:9876
