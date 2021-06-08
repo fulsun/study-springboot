@@ -1,0 +1,4 @@
+springfox:
+  documentation:
+    #swagger文档开关，线上环境关闭
+    enabled: false

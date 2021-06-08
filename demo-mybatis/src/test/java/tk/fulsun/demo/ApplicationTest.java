@@ -13,7 +13,7 @@ import org.springframework.web.context.WebApplicationContext;
  * @author fsun7
  * @title: ApplicationTest
  * @projectName springboot-study
- * @description: TODO
+ * @description: 测试类
  * @date 5/27/2021 10:23 AM
  */
 @SpringBootTest(classes = Application.class)
