@@ -13,6 +13,7 @@
     <module>demo-redis</module>
     <module>demo-druid</module>
     <module>demo-rocketmq</module>
+    <module>demo-condition</module>
   </modules>
 
   <parent>

@@ -1,0 +1,3 @@
+debug: false
+os:
+  type-name: centos-Linux
