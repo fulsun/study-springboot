@@ -15,6 +15,7 @@
     <module>demo-rocketmq</module>
     <module>demo-condition</module>
     <module>demo-swagger</module>
+    <module>demo-log</module>
   </modules>
 
   <parent>

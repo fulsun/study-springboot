@@ -1,0 +1,9 @@
+logging:
+  pattern: #配置日志输出格式
+    file: "%d{yyyy-MM-dd} === [%thread] === %-5level === %logger{50} === - %msg%n"  #配置控制台的日志输出的格式
+  file: #配置日志输出的文件
+    #会在log目录下生成一个spring.log的日志文件
+    path: logs/
+  level: # 配置输出日志级别
+    root: INFO  #设置整个项目的日志输出级别默认info
+    tk.fulsun.demo: DEBUG # 设置该包下的日志输出级别为 DEBUG，输出执行的sql
