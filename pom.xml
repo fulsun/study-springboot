@@ -17,6 +17,7 @@
     <module>demo-swagger</module>
     <module>demo-log</module>
     <module>demo-fastjson</module>
+    <module>project-apifilter</module>
   </modules>
 
   <parent>
