@@ -16,6 +16,7 @@
     <module>demo-condition</module>
     <module>demo-swagger</module>
     <module>demo-log</module>
+    <module>demo-fastjson</module>
   </modules>
 
   <parent>
