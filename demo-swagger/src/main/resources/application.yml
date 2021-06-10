@@ -1,7 +1,20 @@
+server:
+  port: 8080
+
 spring:
+  application:
+    name: springfox-swagger
   profiles:
-    active: prod
-springfox:
-  documentation:
-    #swagger文档开关，线上环境关闭
-    enabled: true
+    active: default #prod
+
+#springfox:
+#  documentation:
+#    #swagger文档开关，线上环境关闭
+#    enabled: true
+# ===== 自定义swagger配置 ===== #
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  application-version: 1.0
+  application-description: springfox swagger 3.0整合Demo
+  try-host: http://localhost:${server.port}
