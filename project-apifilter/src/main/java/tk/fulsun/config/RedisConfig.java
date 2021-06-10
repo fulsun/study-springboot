@@ -24,7 +24,7 @@ public class RedisConfig {
     // key采用String的序列化方式
     template.setKeySerializer(stringRedisSerializer);
     // value序列化方式采用jackson
-    template.setValueSerializer(fastJsonRedisSerializer);
+    template.setValueSerializer(stringRedisSerializer);
     // hash的key也采用String的序列化方式
     template.setHashKeySerializer(stringRedisSerializer);
     // hash的value序列化方式采用jackson

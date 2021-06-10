@@ -30,7 +30,7 @@ public class ApiAccessInterceptor extends HandlerInterceptorAdapter {
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
       throws Exception {
-    redisUtil.setRedisTemplate(redisTemplate);
+    // redisUtil.setRedisTemplate(redisTemplate);
     // 判断请求是否属于方法的请求
     if (handler instanceof HandlerMethod) {
       HandlerMethod hm = (HandlerMethod) handler;

@@ -12,6 +12,7 @@ import tk.fulsun.annotation.AccessLimit;
  */
 @RestController
 public class FangshuaController {
+
   @GetMapping("/h1")
   public String hello() {
     return "hello world";
