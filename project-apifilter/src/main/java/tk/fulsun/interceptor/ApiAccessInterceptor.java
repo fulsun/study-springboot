@@ -1,4 +1,4 @@
-package tk.fulsun.config;
+package tk.fulsun.interceptor;
 
 import com.alibaba.fastjson.JSON;
 import java.io.OutputStream;

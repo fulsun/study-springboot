@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import tk.fulsun.annotation.AutoICheckToken;
 import tk.fulsun.service.TokenUtilService;
 
 /**
@@ -52,5 +53,16 @@ public class TokenController {
     boolean result = tokenService.validToken(token, userInfo);
     // 根据验证结果响应不同信息
     return result ? "正常调用" : "重复调用";
+  }
+
+  /**
+   * 访问该接口，如果Head 中不带 token测试是否会进入该方法
+   *
+   * @return
+   */
+  @AutoICheckToken
+  @GetMapping("/testToken")
+  public String testIdempotence() {
+    return "成功";
   }
 }

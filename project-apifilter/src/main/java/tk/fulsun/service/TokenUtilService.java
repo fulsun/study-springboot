@@ -3,12 +3,14 @@ package tk.fulsun.service;
 import java.util.Arrays;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
+import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.core.script.RedisScript;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import tk.fulsun.utils.RedisUtil;
 
 /**
@@ -19,11 +21,14 @@ import tk.fulsun.utils.RedisUtil;
 @Slf4j
 @Service
 public class TokenUtilService {
+
   @Autowired private RedisUtil redisUtil;
   @Autowired private RedisTemplate redisTemplate;
 
   /** 存入 Redis 的 Token 键的前缀 */
   private static final String IDEMPOTENT_TOKEN_PREFIX = "token:";
+
+  private static final String TOKEN_NAME = "token";
 
   /**
    * 创建 Token 存入 Redis，并返回该 Token
@@ -67,5 +72,34 @@ public class TokenUtilService {
     }
     log.info("验证 token={},key={},value={} 失败", token, key, value);
     return false;
+  }
+
+  /**
+   * @Description 校验token
+   *
+   * @param:
+   * @param request
+   * @return boolean
+   * @author Cc
+   * @date 2020/4/21 12:01
+   */
+  public boolean checkToken(HttpServletRequest request) throws Exception {
+    StringBuilder key = new StringBuilder();
+    String token = request.getHeader(TOKEN_NAME);
+    if (StringUtils.isEmpty(token)) { // header中不存在token
+      token = request.getParameter(TOKEN_NAME);
+      if (StringUtils.isEmpty(token)) { // parameter中也不存在token
+        throw new RuntimeException("请求违法");
+      }
+    }
+    key.append(IDEMPOTENT_TOKEN_PREFIX).append(token);
+    if (!redisUtil.hasKey(key.toString())) {
+      throw new RuntimeException("请求违法");
+    }
+    boolean remove = redisTemplate.delete(key.toString());
+    if (!remove) {
+      throw new RuntimeException("redis 删除Key失败");
+    }
+    return true;
   }
 }

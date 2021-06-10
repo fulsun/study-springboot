@@ -6,7 +6,8 @@ package tk.fulsun.common;
  * @date 6/9/2021 3:06 PM
  */
 public enum CodeMsg {
-  ACCESS_LIMIT_REACHED(601, "超出访问次数");
+  ACCESS_LIMIT_REACHED(601, "超出访问次数"),
+  ILLEGAL_REQUEST(602, "非法请求");
 
   private String message;
   private int code;

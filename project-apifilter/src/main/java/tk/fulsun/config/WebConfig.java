@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import tk.fulsun.interceptor.ApiAccessInterceptor;
+import tk.fulsun.interceptor.AutoCheckTokenInterceptor;
 
 /**
  * @author fsun7
@@ -12,10 +14,18 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  */
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-  @Autowired private ApiAccessInterceptor apiAccessInterceptor;
+  @Autowired private ApiAccessInterceptor apiAccessInteaceptor;
+  @Autowired private AutoCheckTokenInterceptor autoCheckTokenInterceptor;
 
   @Override
   public void addInterceptors(InterceptorRegistry registry) {
-    registry.addInterceptor(apiAccessInterceptor);
+    registry
+        .addInterceptor(apiAccessInteaceptor)
+        .addPathPatterns("/**")
+        .excludePathPatterns("/css/**", "/images/**", "/js/**", "/login.html");
+    registry
+        .addInterceptor(autoCheckTokenInterceptor)
+        .addPathPatterns("/**")
+        .excludePathPatterns("/css/**", "/images/**", "/js/**", "/login.html");
   }
 }
