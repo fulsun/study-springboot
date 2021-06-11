@@ -31,12 +31,6 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
     </dependency>
-
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <scope>provided</scope>
-    </dependency>
     <!-- 嵌入式数据库支持,用于开发和测试环境，-->
     <dependency>
       <groupId>org.hsqldb</groupId>

@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author fsun7
- * @description: 用户实体类
+ * @description: 用户实体类 create table user( name varchar(20), age int );
  * @date 6/11/2021 2:25 PM
  */
 @Entity

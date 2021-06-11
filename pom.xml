@@ -19,6 +19,7 @@
     <module>demo-fastjson</module>
     <module>project-apifilter</module>
     <module>demo-jdbc-jpa</module>
+    <module>demo-moredatasource</module>
   </modules>
 
   <parent>
@@ -65,7 +66,12 @@
       <artifactId>junit-jupiter</artifactId>
       <scope>test</scope>
     </dependency>
-    <!--     -->
+    <!--  lombok   -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
 
   <dependencyManagement>
@@ -97,13 +103,6 @@
         <groupId>org.redisson</groupId>
         <artifactId>redisson-spring-boot-starter</artifactId>
         <version>3.15.4</version>
-      </dependency>
-      <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>testcontainers-bom</artifactId>
-        <version>${testcontainers.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
