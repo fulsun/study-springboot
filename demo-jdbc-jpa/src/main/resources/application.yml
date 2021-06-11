@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    # com.mysql.cj.jdbc.Driver
+    driver-class-name: org.hsqldb.jdbcDriver
+    # jdbc:mysql://localhost:3306/test
+    url: jdbc:hsqldb:mem://localhost/testdb;shutdown=true
+    username: sa
+    password:
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: create-drop

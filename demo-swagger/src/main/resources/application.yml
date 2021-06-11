@@ -18,3 +18,8 @@ swagger:
   application-version: 1.0
   application-description: springfox swagger 3.0整合Demo
   try-host: http://localhost:${server.port}
+
+
+logging:
+  level:
+    org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: trace

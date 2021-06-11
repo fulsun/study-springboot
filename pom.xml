@@ -18,6 +18,7 @@
     <module>demo-log</module>
     <module>demo-fastjson</module>
     <module>project-apifilter</module>
+    <module>demo-jdbc-jpa</module>
   </modules>
 
   <parent>
