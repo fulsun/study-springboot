@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author fsun7
- * @description: TODO
+ * @description: FastApplication
  * @date 6/9/2021 12:25 PM
  */
 @SpringBootApplication

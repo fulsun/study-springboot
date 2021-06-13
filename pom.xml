@@ -20,6 +20,7 @@
     <module>project-apifilter</module>
     <module>demo-jdbc-jpa</module>
     <module>demo-moredatasource</module>
+      <module>demo-test</module>
   </modules>
 
   <parent>
@@ -52,20 +53,15 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
-<!--      <exclusions>-->
-<!--        &lt;!&ndash; junit-vintage-engine	用于运行JUnit 4 引擎测试-->
-<!--        junit-jupiter-engine	用于运行JUnit 5 引擎测试&ndash;&gt;-->
-<!--        <exclusion>-->
-<!--          <groupId>org.junit.vintage</groupId>-->
-<!--          <artifactId>junit-vintage-engine</artifactId>-->
-<!--        </exclusion>-->
-<!--      </exclusions>-->
+      <exclusions>
+        <!-- junit-vintage-engine	用于运行JUnit 4 引擎测试
+        junit-jupiter-engine	用于运行JUnit 5 引擎测试-->
+        <exclusion>
+          <groupId>org.junit.vintage</groupId>
+          <artifactId>junit-vintage-engine</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.testcontainers</groupId>-->
-<!--      <artifactId>junit-jupiter</artifactId>-->
-<!--      <scope>test</scope>-->
-<!--    </dependency>-->
     <!--  lombok   -->
     <dependency>
       <groupId>org.projectlombok</groupId>
