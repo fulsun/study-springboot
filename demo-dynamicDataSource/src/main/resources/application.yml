@@ -1,0 +1,89 @@
+spring:
+  aop:
+    # 决定是基于接口的还是基于类的代理被创建
+    # 默认为false,表示使用JDK动态代理织入增强;当值为true时,表示使用CGLib动态代理织入增强
+    # 如果目标类没有生命接口,则Spring将自动使用CGLib动态代理.
+    proxy-target-class: true
+  datasource:
+    #readSize为从库数量
+    readSize: 1
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      aop-patterns: tk.fulsun.demo.service.*,tk.fulsun.demo.dao.*,tk.fulsun.demo.controller.*,tk.fulsun.demo.mapper.*
+      master:
+        url: jdbc:mysql://192.168.56.101:3306/demo?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+        # 5.7版本是 com.mysql.jdbc.Driver
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: test
+        password: 123456
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        min-evictableIdleTimeMillis: 300000
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: true
+        testOnReturn: false
+        poolPreparedStatements: true
+        useGlobalDataSourceStat: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        filters: stat,wall,log4j2
+        WebStatFilter:
+          enabled: true
+          exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+          urlPattern: '/*'
+        StatViewServlet:
+          enabled: true
+          urlPattern: '/druid/*'
+          loginUsername: druid
+          loginPassword: druid
+          reset-enable: false
+          allow: 127.0.0.1
+      slave:
+        url: jdbc:mysql://192.168.56.101:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+        driver-class-name: com.mysql.jdbc.Driver
+        username: test
+        password: 123456
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        min-evictableIdleTimeMillis: 300000
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: true
+        testOnReturn: false
+        poolPreparedStatements: true
+        useGlobalDataSourceStat: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        filters: stat,wall
+        WebStatFilter:
+          exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+          enabled: true
+          urlPattern: '/*'
+        StatViewServlet:
+          enabled: true
+          urlPattern: '/druid/*'
+          loginUsername: druid
+          loginPassword: druid
+server:
+  port: 8888
+mybatis:
+  # 映射实体地址
+  type-aliases-package: tk.fulsun.demo.entity
+  # xml配置文件地址
+  mapper-locations: classpath:mapper/*.xml
+  # mybatis全局配置,与configuration 不能同时存在
+  # config-location: classpath:mybatis/mybatis-config.xml
+  configuration:
+    # 开启驼峰命名
+    map-underscore-to-camel-case: true
+    #当传入null的时候对应的jdbctype
+    jdbc-type-for-null: null
+    #用map接受查询结果时，会自动将查询结果为null的字段忽略
+    #查询到0条记录时 会接收到一个所有key值都为null的map
+    #只查询一个字段，而用map接收 会接收到一个为null的map
+    call-setters-on-nulls: true

@@ -62,3 +62,7 @@ mybatis:
     map-underscore-to-camel-case: true
     #当传入null的时候对应的jdbctype
     jdbc-type-for-null: null
+    #用map接受查询结果时，会自动将查询结果为null的字段忽略
+    #查询到0条记录时 会接收到一个所有key值都为null的map
+    #只查询一个字段，而用map接收 会接收到一个为null的map
+    call-setters-on-nulls: true
