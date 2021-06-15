@@ -14,8 +14,6 @@
   <properties>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
-    <!-- knife4j: swagger ui -->
-    <knife4j.version>2.0.8</knife4j.version>
   </properties>
 
   <dependencies>
@@ -31,7 +29,6 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.11</version>
     </dependency>
     <dependency>
       <groupId>org.assertj</groupId>
@@ -44,12 +41,6 @@
     <dependency>
       <groupId>com.github.xiaoymin</groupId>
       <artifactId>knife4j-spring-ui</artifactId>
-      <version>${knife4j.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.10</version>
     </dependency>
   </dependencies>
 </project>
