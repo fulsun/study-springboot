@@ -23,6 +23,7 @@
     <module>demo-test</module>
     <module>demo-dynamicDataSource</module>
     <module>project-seckill-gateway-service</module>
+    <module>project-seckill-order-service</module>
   </modules>
 
   <parent>
