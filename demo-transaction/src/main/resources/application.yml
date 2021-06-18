@@ -1,0 +1,61 @@
+server:
+  port: 8080
+
+logging:
+  file: #配置日志输出的文件
+    path: logs/demo-transaction.log
+  pattern:
+    console: "%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n"
+    file: "%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n"
+  level:
+    root: INFO
+spring:
+  application:
+    name: demo-transaction
+  datasource:
+    primary:
+      jdbc-url: jdbc:h2:mem:testdbsa
+      username: sa
+      password:
+      driver-class-name: org.h2.Driver
+    secondary:
+      jdbc-url: jdbc:mysql://192.168.56.101:3306/test2
+      username: test
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  # H2配置
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: true
+        trace: false
+  jta:
+    enabled: true
+    atomikos:
+      datasource:
+        primary:
+          xa-data-source-class-name: org.h2.jdbcx.JdbcDataSource
+          xa-properties:
+            # 绝对路径 jdbc:h2:file:/data/demo  mem
+            url: jdbc:h2:mem:testdbsa
+            user: sa
+            password:
+          unique-resource-name: test1
+          max-pool-size: 25
+          min-pool-size: 3
+          max-lifetime: 20000
+          borrow-connection-timeout: 10000
+        secondary:
+          xa-data-source-class-name: com.mysql.cj.jdbc.MysqlXADataSource
+          xa-properties:
+            url: jdbc:mysql://192.168.56.101:3306/test2
+            user: test
+            password: 123456
+          unique-resource-name: test2
+          max-pool-size: 25
+          min-pool-size: 3
+          max-lifetime: 20000
+          borrow-connection-timeout: 10000
+

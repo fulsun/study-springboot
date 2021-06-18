@@ -25,6 +25,7 @@
     <module>project-seckill-gateway-service</module>
     <module>project-seckill-order-service</module>
     <module>demo-flyway</module>
+    <module>demo-transaction</module>
   </modules>
 
   <parent>

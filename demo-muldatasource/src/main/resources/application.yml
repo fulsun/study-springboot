@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    primary:
+      jdbc-url: jdbc:mysql://192.168.56.101:3306/test1
+      username: test
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    secondary:
+      jdbc-url: jdbc:mysql://192.168.56.101:3306/test2
+      username: test
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
