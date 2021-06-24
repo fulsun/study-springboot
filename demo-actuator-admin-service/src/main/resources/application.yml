@@ -1,0 +1,27 @@
+# 指定端口
+server:
+  port: 6145
+spring:
+  application:
+    name: spring-boot-admin
+  security:
+    user:
+      name: admin
+      password: admin
+  boot:
+    admin:
+      notify:
+        mail:
+          from: yyyy@qq.com
+          to: zzz@qq.com
+  mail:
+    host: smtp.qq.com
+    username: xxx@qq.com
+    password: xxx
+    properties:
+      mail:
+        smtp:
+          auth: true
+        starttls:
+          enable: true
+          required: true

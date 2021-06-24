@@ -27,6 +27,8 @@
     <module>demo-flyway</module>
     <module>demo-transaction</module>
       <module>demo-cache</module>
+      <module>demo-actuator</module>
+      <module>demo-actuator-admin-service</module>
   </modules>
 
   <parent>
