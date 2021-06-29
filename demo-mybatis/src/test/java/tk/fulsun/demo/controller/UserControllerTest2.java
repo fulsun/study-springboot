@@ -32,7 +32,7 @@ import tk.fulsun.demo.model.User;
  * ResultActions.andDo添加一个结果处理器，表示要对结果做点什么事情，比如此处使用MockMvcResultHandlers.print()输出整个响应结果信息
  * </pre>
  *
- * @author fsun7
+ * @author fulsun
  * @title: UserControllerTest
  * @projectName springboot-study
  * @description: 接口测试

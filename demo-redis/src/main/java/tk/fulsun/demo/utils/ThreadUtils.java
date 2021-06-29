@@ -5,7 +5,7 @@ import org.redisson.api.RedissonClient;
 import tk.fulsun.demo.config.BeanContext;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 多线程无法@Autowired注入，手动获取
  * @date 6/1/2021 3:31 PM
  */

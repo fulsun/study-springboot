@@ -1,7 +1,7 @@
 package tk.fulsun.demo.config;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 获取Spring中的Bean
  * @date 6/1/2021 4:58 PM
  */

@@ -4,7 +4,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyStatus;
@@ -27,7 +26,7 @@ import org.apache.rocketmq.remoting.common.RemotingHelper;
  *  - 本地事务执行失败 ---> 返回超时或Unknow状态 -- broker进行消息检查-- > 处理错误
  * </pre>
  *
- * @author fsun7
+ * @author fulsun
  * @description: 事务消息：在4.3版本后开放事务消息的特性
  * @date 6/3/2021 1:49 PM
  */

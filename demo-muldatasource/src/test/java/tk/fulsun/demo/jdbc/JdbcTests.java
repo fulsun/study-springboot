@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 测试JDBC方式下的多数据源操作
  * @date 6/11/2021 4:46 PM
  */

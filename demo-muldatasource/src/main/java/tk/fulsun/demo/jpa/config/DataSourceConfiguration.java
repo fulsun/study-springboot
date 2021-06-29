@@ -3,7 +3,7 @@ package tk.fulsun.demo.jpa.config;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: JPA数据源的配置类
  * @date 6/11/2021 4:08 PM
  */

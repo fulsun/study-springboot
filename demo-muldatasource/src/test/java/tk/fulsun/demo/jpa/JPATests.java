@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 测试JPA方式下的多数据源操作
  * @date 6/11/2021 4:23 PM
  */

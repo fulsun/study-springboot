@@ -8,7 +8,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 读取配置文件信息
  * @date 6/2/2021 5:23 PM
  */

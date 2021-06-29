@@ -1,13 +1,14 @@
 package tk.fulsun.demo.controller;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 测试代码
  * @date 6/9/2021 12:20 PM
  */
@@ -24,7 +25,7 @@ public class TestController {
    * 		"SpringBoot",
    * 		"Hadoop"
    * 	],
-   * 	"name":"fl6145",
+   * 	"name":"fulsun",
    * 	"email":"fl_6145@163.com"
    * }
    * </pre>
@@ -39,7 +40,7 @@ public class TestController {
     skills.add("Hadoop");
 
     HashMap<String, Object> map = new HashMap<>();
-    map.put("name", "fl6145");
+    map.put("name", "fulsun");
     map.put("email", "fl_6145@163.com");
     map.put("skills", skills);
     return map;

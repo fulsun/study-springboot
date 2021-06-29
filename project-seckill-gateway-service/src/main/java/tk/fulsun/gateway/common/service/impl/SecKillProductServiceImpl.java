@@ -14,7 +14,7 @@ import tk.fulsun.gateway.common.dao.dataobject.TSeckillProductExample.Criteria;
 import tk.fulsun.gateway.common.service.SecKillProductService;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀商品服务实现
  * @date 6/15/2021 5:18 PM
  */

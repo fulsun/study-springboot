@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: swagger的配置类
  * @date 6/8/2021 2:29 PM
  */

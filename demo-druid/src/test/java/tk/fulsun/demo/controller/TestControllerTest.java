@@ -16,7 +16,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 /**
  * 不会对Filter、Servlet进行初始化 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)
  *
- * @author fsun7
+ * @author fulsun
  * @description: 控制层接口测试
  * @date 5/27/2021 10:57 AM
  */

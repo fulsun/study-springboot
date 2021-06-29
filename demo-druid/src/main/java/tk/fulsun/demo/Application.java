@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @title: Application
  * @projectName springboot-study
  * @description: 主启动类 ,无数据库时可以添加exclude属性 表示不加载对应的自动配置类

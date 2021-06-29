@@ -8,7 +8,7 @@ import tk.fulsun.interceptor.ApiAccessInterceptor;
 import tk.fulsun.interceptor.AutoCheckTokenInterceptor;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 自定义web的配置
  * @date 6/9/2021 3:17 PM
  */

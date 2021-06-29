@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 测试swagger的接口生成
  * @date 6/8/2021 2:54 PM
  */

@@ -7,7 +7,7 @@ import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: RestTemplate配置
  * @date 6/15/2021 5:01 PM
  */

@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 检查方法幂等
  * @date 6/10/2021 1:52 PM
  */

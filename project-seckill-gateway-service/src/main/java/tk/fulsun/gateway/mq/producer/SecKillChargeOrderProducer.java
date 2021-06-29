@@ -11,7 +11,7 @@ import tk.fulsun.gateway.common.utils.LogExceptionWapper;
 import tk.fulsun.gateway.mq.msg.MessageProtocolConst;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀订单生产者初始化
  * @date 6/16/2021 11:33 AM
  */

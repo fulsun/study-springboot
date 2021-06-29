@@ -4,7 +4,7 @@ import java.util.List;
 import tk.fulsun.order.dao.dataobject.TSeckillProduct;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀商品service接口
  * @date 6/16/2021 4:15 PM
  */

@@ -16,7 +16,7 @@ import org.apache.rocketmq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.common.RemotingHelper;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 保证发送消息的顺序: 默认保证的是局部消息（broker类的队列中是有序的）
  * @date 6/3/2021 1:49 PM
  */

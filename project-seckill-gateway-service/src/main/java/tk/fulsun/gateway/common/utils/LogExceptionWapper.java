@@ -5,7 +5,7 @@ import java.io.StringWriter;
 import java.io.Writer;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 日志工具
  * @date 6/16/2021 11:49 AM
  */

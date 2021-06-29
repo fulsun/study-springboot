@@ -16,7 +16,7 @@ import tk.fulsun.order.mq.msg.MessageProtocolConst;
 import tk.fulsun.order.utils.LogExceptionWapper;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀下单消费者
  * @date 6/16/2021 3:13 PM
  */

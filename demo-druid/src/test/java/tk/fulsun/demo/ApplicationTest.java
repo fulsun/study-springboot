@@ -12,7 +12,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @title: ApplicationTest
  * @projectName springboot-study
  * @description: 测试类

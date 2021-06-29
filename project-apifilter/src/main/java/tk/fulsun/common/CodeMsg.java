@@ -1,7 +1,7 @@
 package tk.fulsun.common;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 返回的枚举常量
  * @date 6/9/2021 3:06 PM
  */

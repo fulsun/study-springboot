@@ -17,7 +17,7 @@ import tk.fulsun.common.CodeMsg;
 import tk.fulsun.service.TokenUtilService;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 检查token的拦截器
  * @date 6/10/2021 1:54 PM
  */

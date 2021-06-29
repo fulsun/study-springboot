@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tk.fulsun.demo.service.UserService;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 测试事务控制层
  * @date 6/18/2021 11:47 AM
  */

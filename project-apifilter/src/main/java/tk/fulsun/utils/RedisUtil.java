@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: Redis工具类
  * @date 6/9/2021 2:51 PM
  */

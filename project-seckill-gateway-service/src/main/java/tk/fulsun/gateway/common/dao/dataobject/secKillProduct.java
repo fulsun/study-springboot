@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀商品数据库 t_seckill_product 映射实体
  * @date 6/15/2021 5:08 PM
  */

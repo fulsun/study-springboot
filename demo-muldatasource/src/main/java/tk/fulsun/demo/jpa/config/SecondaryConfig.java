@@ -1,7 +1,7 @@
 // package tk.fulsun.demo.jpa.config;
 //
 // /**
-//  * @author fsun7
+//  * @author fulsun
 //  * @description: JPA配置
 //  * @date 6/11/2021 4:44 PM
 //  */

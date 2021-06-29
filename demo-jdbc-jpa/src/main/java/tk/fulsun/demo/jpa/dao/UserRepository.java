@@ -6,7 +6,7 @@ import org.springframework.data.repository.query.Param;
 import tk.fulsun.demo.entity.User;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 数据访问接口
  * @date 6/11/2021 2:28 PM
  */

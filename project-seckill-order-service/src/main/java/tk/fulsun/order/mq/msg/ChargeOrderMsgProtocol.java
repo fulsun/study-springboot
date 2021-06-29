@@ -9,7 +9,7 @@ import lombok.Getter;
 import lombok.ToString;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 单结果通知协议
  * @date 6/16/2021 10:54 AM
  */

@@ -17,7 +17,7 @@ import tk.fulsun.common.CodeMsg;
 import tk.fulsun.utils.RedisUtil;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 访问的拦截器
  * @date 6/9/2021 2:28 PM
  */

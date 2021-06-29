@@ -11,7 +11,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.util.ResourceUtils;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @title: GeneratorSqlmap
  * @projectName springboot-study
  * @description: Java代码方式生成数据库的 Mapper 相关映射文件

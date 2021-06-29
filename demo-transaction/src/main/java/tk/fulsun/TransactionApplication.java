@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 启动类
  * @date 6/18/2021 10:28 AM
  */

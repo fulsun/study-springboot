@@ -13,7 +13,7 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: fastjson配置类
  * @date 6/9/2021 11:20 AM
  */

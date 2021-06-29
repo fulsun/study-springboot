@@ -4,7 +4,7 @@ import tk.fulsun.order.dao.dataobject.TSeckillOrder;
 import tk.fulsun.order.dto.Result;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀订单本地service接口
  * @date 6/16/2021 3:35 PM
  */

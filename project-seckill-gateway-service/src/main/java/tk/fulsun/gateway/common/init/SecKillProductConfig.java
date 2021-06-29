@@ -12,7 +12,7 @@ import tk.fulsun.gateway.common.dao.dataobject.TSeckillProduct;
 import tk.fulsun.gateway.common.service.SecKillProductService;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀商品初始化加载，正式生产环境是有一个商品服务的，这里简化处理了
  * @date 6/15/2021 5:15 PM
  */

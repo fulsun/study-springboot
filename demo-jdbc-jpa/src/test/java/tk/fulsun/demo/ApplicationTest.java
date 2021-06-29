@@ -10,7 +10,7 @@ import tk.fulsun.demo.entity.User;
 import tk.fulsun.demo.jpa.dao.UserRepository;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 主测试类
  * @date 6/11/2021 2:32 PM
  */

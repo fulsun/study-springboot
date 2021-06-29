@@ -6,7 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 import tk.fulsun.demo.entity.User;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 用户操作接口
  * @date 6/18/2021 10:22 AM
  */

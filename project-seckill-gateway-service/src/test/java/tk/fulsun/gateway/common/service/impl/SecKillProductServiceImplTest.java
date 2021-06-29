@@ -8,7 +8,7 @@ import tk.fulsun.gateway.common.dao.dataobject.TSeckillProduct;
 import tk.fulsun.gateway.common.service.SecKillProductService;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: TODO
  * @date 6/16/2021 10:01 AM
  */

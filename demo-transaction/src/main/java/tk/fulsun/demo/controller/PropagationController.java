@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tk.fulsun.demo.service.impl.UserService2;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 传播行为测试
  * @date 6/18/2021 1:39 PM
  */

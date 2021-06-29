@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 错误码封装
  * @date 6/16/2021 10:24 AM
  */

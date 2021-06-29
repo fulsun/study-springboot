@@ -1,7 +1,7 @@
 package tk.fulsun.gateway.mq.msg;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 消息协议常量
  * @date 6/16/2021 11:16 AM
  */

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 查单请求实体
  * @date 6/16/2021 10:34 AM
  */

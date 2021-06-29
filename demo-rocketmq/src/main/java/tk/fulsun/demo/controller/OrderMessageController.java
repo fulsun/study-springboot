@@ -19,7 +19,7 @@ import tk.fulsun.demo.entity.OrderStep;
 import tk.fulsun.demo.manager.Producer;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 全局顺序消息：默认保证局部（broker有序）
  * @date 6/8/2021 1:39 PM
  */

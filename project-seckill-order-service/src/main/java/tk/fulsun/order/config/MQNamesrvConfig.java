@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: RocketMQ NameServer配置
  * @date 6/15/2021 4:14 PM
  */

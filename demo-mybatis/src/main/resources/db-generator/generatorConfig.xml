@@ -64,7 +64,7 @@
     <!--javaModelGenerator : 节点用于配置实体类生成器-->
     <!--targetPackage：生成实体类存放的包名 targetProject：指定目标项目路径，可以使用绝对路径或者相对路径-->
     <javaModelGenerator targetPackage="tk.fulsun.demo.model"
-      targetProject="C:\Users\fsun7\IdeaProjects\springboot-study\demo-mybatis\src\main\java">
+      targetProject="C:\Users\fulsun\IdeaProjects\springboot-study\demo-mybatis\src\main\java">
       <!-- constructorBased为true就会使用构造方法入参，为false使用setter方法入参，默认为false -->
       <!--<property name="constructorBased" value="false"></property>-->
       <!--enableSubPackages 是否在targetPackage基础上生成子包。默认为false。当为true时，会将表所在 schema 名作为子包名-->
@@ -80,7 +80,7 @@
 
     <!--sqlMapGenerator : 节点用于配置 XML 生成器-->
     <sqlMapGenerator targetPackage="mybatis.mapper"
-      targetProject="C:\Users\fsun7\IdeaProjects\springboot-study\demo-mybatis\src\main\resources">
+      targetProject="C:\Users\fulsun\IdeaProjects\springboot-study\demo-mybatis\src\main\resources">
       <!--enableSubPackages ： 是否在targetPackage基础上生成子包。默认为false。当为true时，会将表所在 schema 名作为子包名-->
       <!--<property name="enableSubPackages" value="false" />-->
     </sqlMapGenerator>
@@ -90,7 +90,7 @@
       MyBtais3Simple：ANNOTATEDMAPPER、XMLMAPPER
   -->
     <javaClientGenerator type="XMLMAPPER" targetPackage="tk.fulsun.demo.mapper"
-      targetProject="C:\Users\fsun7\IdeaProjects\springboot-study\demo-mybatis\src\main\java">
+      targetProject="C:\Users\fulsun\IdeaProjects\springboot-study\demo-mybatis\src\main\java">
     </javaClientGenerator>
 
     <!--表的配置-->

@@ -15,7 +15,7 @@ import tk.fulsun.demo.mybatis.mapper.s.UserMapperSecondary;
 import tk.fulsun.demo.mybatis.mapper.s.UserSecondary;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: MybatisTests
  * @date 6/11/2021 5:24 PM
  */

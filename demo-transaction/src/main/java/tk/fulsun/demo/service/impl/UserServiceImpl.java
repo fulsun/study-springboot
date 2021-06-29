@@ -10,7 +10,7 @@ import tk.fulsun.demo.entity.User;
 import tk.fulsun.demo.service.UserService;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 用户操作接口实现类
  * @date 6/18/2021 10:22 AM
  */

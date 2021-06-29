@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 测试template操作5中常用数据类型
  * @date 5/31/2021 9:44 AM
  */

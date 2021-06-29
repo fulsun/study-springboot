@@ -5,7 +5,7 @@ import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 基础协议类
  * @date 6/16/2021 10:51 AM
  */

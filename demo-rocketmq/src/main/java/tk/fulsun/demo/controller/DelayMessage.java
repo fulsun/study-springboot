@@ -11,7 +11,7 @@ import tk.fulsun.demo.config.RocketMQProperties;
 import tk.fulsun.demo.manager.Producer;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 发送延时消息
  * @date 6/8/2021 1:45 PM
  */

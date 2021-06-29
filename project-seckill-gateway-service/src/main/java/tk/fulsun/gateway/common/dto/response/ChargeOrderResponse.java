@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.ToString;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 下单sdk接口返回参数
  * @date 6/16/2021 11:54 AM
  */

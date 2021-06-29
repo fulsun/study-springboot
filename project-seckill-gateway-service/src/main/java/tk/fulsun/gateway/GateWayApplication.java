@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 网关服务启动类
  * @date 6/15/2021 3:55 PM
  */

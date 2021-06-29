@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 访问限制注解类
  * @date 6/9/2021 2:25 PM
  */

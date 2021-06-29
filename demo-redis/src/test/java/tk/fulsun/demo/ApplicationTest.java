@@ -8,7 +8,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 主测试类
  * @date 5/27/2021 4:27 PM
  */

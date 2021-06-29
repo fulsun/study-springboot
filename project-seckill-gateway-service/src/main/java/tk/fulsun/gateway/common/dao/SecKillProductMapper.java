@@ -4,7 +4,7 @@ import java.util.List;
 import tk.fulsun.gateway.common.dao.dataobject.secKillProduct;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀商品Mapper接口
  * @date 6/15/2021 5:10 PM
  */

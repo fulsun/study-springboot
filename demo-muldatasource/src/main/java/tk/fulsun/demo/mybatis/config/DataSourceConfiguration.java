@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 数据源配置
  * @date 6/11/2021 4:49 PM
  */

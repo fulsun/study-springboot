@@ -27,7 +27,7 @@ import tk.fulsun.gateway.mq.msg.MessageProtocolConst;
 import tk.fulsun.gateway.mq.producer.SecKillChargeOrderProducer;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀下单service实现
  * @date 6/16/2021 10:41 AM
  */

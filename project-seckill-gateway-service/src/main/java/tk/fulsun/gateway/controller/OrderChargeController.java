@@ -18,7 +18,7 @@ import tk.fulsun.gateway.common.service.SecKillChargeService;
 import tk.fulsun.gateway.common.service.SecKillProductService;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: TODO
  * @date 6/16/2021 1:41 PM
  */

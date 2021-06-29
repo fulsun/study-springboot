@@ -14,7 +14,7 @@ import org.springframework.util.StringUtils;
 import tk.fulsun.utils.RedisUtil;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: Token 工具类: 创建与验证
  * @date 6/10/2021 10:56 AM
  */

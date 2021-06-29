@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: UserMapperSecondary
  * @date 6/11/2021 5:23 PM
  */

@@ -19,7 +19,7 @@ import tk.fulsun.order.service.SecKillProductService;
 import tk.fulsun.order.utils.LogExceptionWapper;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀订单消费监听回调
  * @date 6/16/2021 3:29 PM
  */

@@ -1,0 +1,28 @@
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  profiles:
+    active: default
+  datasource:
+    username: test
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.56.101:3306/springbootstudy?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=false
+mybatis:
+  # 映射实体地址
+  type-aliases-package: tk.fulsun.demo.model
+  # xml配置文件地址
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  # mybatis全局配置,与configuration 不能同时存在
+  # config-location: classpath:mybatis/mybatis-config.xml
+  configuration:
+    # 开启驼峰命名
+    map-underscore-to-camel-case: true
+    #当传入null的时候对应的jdbctype
+    jdbc-type-for-null: null
+    #用map接受查询结果时，会自动将查询结果为null的字段忽略
+    #查询到0条记录时 会接收到一个所有key值都为null的map
+    #只查询一个字段，而用map接收 会接收到一个为null的map
+    call-setters-on-nulls: true

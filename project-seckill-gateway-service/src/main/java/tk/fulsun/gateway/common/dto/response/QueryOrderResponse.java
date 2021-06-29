@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.ToString;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 平台订单查询返回实体
  * @date 6/16/2021 11:58 AM
  */

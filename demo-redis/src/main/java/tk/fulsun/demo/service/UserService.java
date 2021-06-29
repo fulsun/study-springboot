@@ -16,7 +16,7 @@ import tk.fulsun.demo.model.UserExample;
 import tk.fulsun.demo.model.UserExample.Criteria;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 用户管理的服务层
  * @date 5/31/2021 3:32 PM
  */

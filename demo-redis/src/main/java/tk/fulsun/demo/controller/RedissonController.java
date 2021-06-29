@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tk.fulsun.demo.utils.ThreadUtils;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: RedissonController
  * @date 6/1/2021 10:28 AM
  */

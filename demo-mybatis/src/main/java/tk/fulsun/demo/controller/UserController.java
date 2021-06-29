@@ -15,7 +15,7 @@ import tk.fulsun.demo.model.UserExample;
 import tk.fulsun.demo.model.UserExample.Criteria;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @title: TestController
  * @projectName springboot-study
  * @description: 用户控制层代码

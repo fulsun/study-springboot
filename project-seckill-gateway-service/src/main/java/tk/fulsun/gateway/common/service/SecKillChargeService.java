@@ -5,7 +5,7 @@ import tk.fulsun.gateway.common.dto.request.ChargeOrderRequest;
 import tk.fulsun.gateway.common.dto.request.QueryOrderRequest;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 秒杀下单service
  * @date 6/16/2021 10:17 AM
  */

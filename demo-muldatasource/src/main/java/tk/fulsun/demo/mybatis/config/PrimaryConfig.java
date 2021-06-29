@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: MyBatis配置
  * @date 6/11/2021 4:50 PM
  */

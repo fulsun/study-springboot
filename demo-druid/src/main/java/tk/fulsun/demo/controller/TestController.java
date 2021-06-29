@@ -9,7 +9,7 @@ import tk.fulsun.demo.entity.User;
 import tk.fulsun.demo.entity.UserRowMapper;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @title: TestController
  * @projectName springboot-study
  * @description: 控制层代码，操作数据库

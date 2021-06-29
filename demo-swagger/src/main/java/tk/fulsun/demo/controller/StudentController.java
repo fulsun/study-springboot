@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tk.fulsun.demo.entity.User;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 学生管理
  * @date 6/10/2021 4:09 PM
  */

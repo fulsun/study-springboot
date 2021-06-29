@@ -11,7 +11,7 @@ import tk.fulsun.annotation.AutoICheckToken;
 import tk.fulsun.service.TokenUtilService;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 测试token的 Controller 类
  * @date 6/10/2021 11:10 AM
  */
@@ -31,7 +31,7 @@ public class TokenController {
     // 注：这里存储该内容只是举例，其作用为辅助验证，使其验证逻辑更安全，如这里存储用户信息，其目的为:
     // - 1)、使用"token"验证 Redis 中是否存在对应的 Key
     // - 2)、使用"用户信息"验证 Redis 的 Value 是否匹配。
-    String userInfo = "fl6145";
+    String userInfo = "fulsun";
     // 获取 Token 字符串，并返回
     return tokenService.generateToken(userInfo);
   }
@@ -45,10 +45,10 @@ public class TokenController {
   @PostMapping("/test")
   public String test(
       @RequestHeader(value = "token") String token,
-      @RequestParam(value = "userinfo", defaultValue = "fl6145", required = false)
+      @RequestParam(value = "userinfo", defaultValue = "fulsun", required = false)
           String userInfo) {
     // 获取用户信息（这里使用模拟数据）
-    // String userInfo = "fl6145";
+    // String userInfo = "fulsun";
     // 根据 Token 和与用户相关的信息到 Redis 验证是否存在对应的信息
     boolean result = tokenService.validToken(token, userInfo);
     // 根据验证结果响应不同信息

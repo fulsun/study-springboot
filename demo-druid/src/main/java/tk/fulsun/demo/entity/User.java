@@ -1,7 +1,7 @@
 package tk.fulsun.demo.entity;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @title: User
  * @projectName springboot-study
  * @description: 用户实体类

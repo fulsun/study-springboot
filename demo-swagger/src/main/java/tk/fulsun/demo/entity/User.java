@@ -3,15 +3,14 @@ package tk.fulsun.demo.entity;
 import com.sun.istack.internal.NotNull;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
-
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
+import lombok.Data;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 用户实体类
  * @date 6/10/2021 5:31 PM
  */

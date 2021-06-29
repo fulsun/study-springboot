@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @title: UserRowMapper
  * @projectName springboot-study
  * @description: UserRowMapper映射数据库字段

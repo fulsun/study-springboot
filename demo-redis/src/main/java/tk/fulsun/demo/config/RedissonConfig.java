@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: RedissonConfig
  * @date 6/1/2021 10:25 AM
  */

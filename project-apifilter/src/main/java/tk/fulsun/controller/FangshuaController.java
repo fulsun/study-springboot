@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tk.fulsun.annotation.AccessLimit;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: API接口
  * @date 6/9/2021 3:19 PM
  */

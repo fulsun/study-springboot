@@ -14,7 +14,7 @@ import org.apache.rocketmq.common.message.MessageExt;
 import org.apache.rocketmq.remoting.common.RemotingHelper;
 
 /**
- * @author fsun7
+ * @author fulsun
  * @description: 通过消息队列 发送 | 消费 消息
  * @date 6/3/2021 1:49 PM
  */
