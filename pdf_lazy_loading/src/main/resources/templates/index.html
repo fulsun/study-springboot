@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>滚动加载 PDF</title>
+    <style>
+        .page-container {
+            margin: 20px auto;
+            box-shadow: 0 0 5px #ccc;
+        }
+    </style>
+</head>
+<body>
+<div id="pdf-container"></div>
+
+<!-- 引入 PDF.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+
+<script>
+    const url = '/pdfpreview2'; // 你的 PDF 接口地址
+    let currentPage = 1; // 当前加载的页数
+    let pdfInstance = null; // 保存 PDF 实例
+    let isRendering = false; // 防止重复渲染
+
+    // 初始化 PDF 加载
+    const loadPDF = async () => {
+        try {
+            const loadingTask = pdfjsLib.getDocument({
+                url: url,
+                rangeChunkSize: 65536, // 分块大小（64KB）
+                disableAutoFetch: true, // 禁用自动加载整个文件
+            });
+
+            pdfInstance = await loadingTask.promise;
+            renderPage(currentPage); // 渲染第一页
+            addScrollListener(); // 添加滚动监听
+        } catch (error) {
+            console.error("PDF 加载失败:", error);
+        }
+    };
+
+    // 渲染单个页面
+    const renderPage = async (pageNumber) => {
+        if (isRendering || pageNumber > pdfInstance.numPages) return;
+        isRendering = true;
+
+        try {
+            const page = await pdfInstance.getPage(pageNumber);
+            const viewport = page.getViewport({ scale: 1.5 });
+
+            // 创建画布容器
+            const container = document.createElement('div');
+            container.className = 'page-container';
+            container.style.width = `${viewport.width}px`;
+            container.style.height = `${viewport.height}px`;
+            document.getElementById('pdf-container').appendChild(container);
+
+            // 创建画布
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+            container.appendChild(canvas);
+
+            // 渲染页面
+            await page.render({
+                canvasContext: context,
+                viewport: viewport,
+            }).promise;
+
+            console.log(`第 ${pageNumber} 页渲染完成`);
+            currentPage++;
+            isRendering = false;
+
+            // 立即检查是否需要加载下一页
+            checkScroll();
+        } catch (error) {
+            console.error(`第 ${pageNumber} 页渲染失败:`, error);
+            isRendering = false;
+        }
+    };
+
+    // 检查是否滚动到底部
+    const checkScroll = () => {
+        const lastPageContainer = document.querySelector('.page-container:last-child');
+        if (!lastPageContainer) return;
+
+        const lastPageBottom = lastPageContainer.offsetTop + lastPageContainer.offsetHeight;
+        const scrollPosition = window.innerHeight + window.scrollY;
+
+        // 如果距离底部小于 100px，加载下一页
+        if (scrollPosition > lastPageBottom - 100) {
+            renderPage(currentPage);
+        }
+    };
+
+    // 添加滚动监听
+    const addScrollListener = () => {
+        window.addEventListener('scroll', checkScroll);
+    };
+
+    // 启动 PDF 加载
+    loadPDF();
+</script>
+</body>
+</html>

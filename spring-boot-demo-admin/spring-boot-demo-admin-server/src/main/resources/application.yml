@@ -1,0 +1,26 @@
+server:
+  port: 8000
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  mail:
+    host: smtp.qq.com
+    username: XXXXX@qq.com
+    password: XXXXX
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: true
+            required: true
+
+  boot:
+    admin:
+      notify:
+        mail:
+          from: XXXXX@qq.com
+          to: XXXX@163.com

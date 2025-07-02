@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+logging:
+  pattern:
+    #格式化，只能输出日期和内容
+    console: "%d - %msg%n"
+  file:
+    # 文件名为aaa.log
+    name: "D:/bbb.log"
+    # 文件名为spring.log
+    path: "D:/"

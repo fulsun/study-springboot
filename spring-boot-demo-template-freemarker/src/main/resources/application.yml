@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+spring:
+  freemarker:
+    charset: UTF-8 # 设置编码
+    perfix:  # 设置前缀 文件夹
+    suffix: .ftl   # 设置后缀文件名
+    number_format: '0.##'   #数字格式化，无小数点
